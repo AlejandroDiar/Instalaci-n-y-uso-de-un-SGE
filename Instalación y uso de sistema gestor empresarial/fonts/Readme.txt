@@ -1,1 +1,0 @@
-This font is free, but a small donation would give me a big smile! :)
