@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos y características SGE</title>
+    <link rel="stylesheet" href="css/Tipos SGE.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header id="Inicio">
+        <h1>TIPOS Y CARACTERISTICAS SGE</h1>
+    </header>
+    <nav>
+        <div class="BotonMenu">
+            <p>MENU</p>
+            <button onclick="mostrarMenu()"></button>
+        </div>
+        <ul class="Menu">
+            <li><a href="index.html">Gestores Empresariales</a></li>
+            <li><a href="Tipos SGE.html">Tipos y Caracterísiticas</a></li>
+            <li><a href="Odoo.html">¿Qué es Odoo?</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <ul>
+        <li>
+            <a href="#Inicio">Inicio</a>
+            <ul>
+                <li><a href="#ERP">ERP Enterprise Resource Planning</a></li>
+                <li><a href="#CRM">CRM Customer Relationship Management</a></li>
+                <li><a href="#SCM">SCM Supply Chain Management</a></li>
+                <li><a href="#HRMS">HRMS Human Resource Management System</a></li>
+                <li><a href="#BI">BI Business Intelligence</a></li>
+                <li><a href="#DMS">DMS Document Management System</a></li>
+                <li><a href="#PMS">PMS Project Management System</a></li>
+            </ul>
+        </li>
+    </ul>
+    </aside>
+    <main>
+        <article class="articulo1" id="ERP">
+            <section class="texto">
+                <h2>ERP (Enterprise Resource Planning)</h2>
+                <br><br>
+                <p>- Integra todos los procesos centrales de una empresa.</p>
+                <br>
+                <p>- Base de datos única.</p>
+                <br>
+                <p>- Automatiza tareas como contabilidad, inventario, compras.</p>
+                <br>
+                <p>- Escalable y modular.</p>
+            </section>
+            <section class="imagen1"></section>
+        </article>
+        <article class="articulo2" id="CRM">
+            <section class="imagen2"></section>
+            <section class="texto">
+                <h2>CRM (Customer Relationship Management)</h2>
+                <br><br>
+                <p>- Gestiona información de clientes.</p>
+                <br>
+                <p>- Mejora la relación con los clientes.</p>
+                <br>
+                <p>- Automatiza tareas como ventas, marketing y servicio al cliente.</p>
+            </section>
+        </article>
+        <article class="articulo3" id="SCM">
+            <section class="texto">
+                <h2>SCM (Supply Chain Management)</h2>
+                <br><br>
+                <p>- Ayuda a coordinar (proveedores, producción, distribución).</p>
+                <br>
+                <p>- Optimiza inventarios.</p>
+                <br>
+                <p>- Reduce costos de logística.</p>
+                <br>
+                <p>Mejora la comunicación con los proveedores</p>
+            </section>
+            <section class="imagen3"></section>
+        </article>
+        <article class="articulo4" id="HRMS">
+            <section class="imagen4"></section>
+            <section class="texto">
+                <h2>HRMS (Human Resource Management System)</h2>
+                <br><br>
+                <p>- Automatiza nóminas, contratos, etc.</p>
+                <br>
+                <p>- Evalúa el desempeño del personal.</p>
+                <br>
+                <p>- Almacena y protege datos laborales.</p>
+            </section>
+        </article>
+        <article class="articulo5" id="BI">
+            <section class="texto">
+                <h2>BI (Business Intelligence)</h2>
+                <br><br>
+                <p>- Permite analizar grandes cantidades de datos.</p>
+                <br>
+                <p>- Usa gráficos y pizarras para mostrar la información.</p>
+                <br>
+                <p>- Ayuda a tomar decisiones estratégicas.</p>
+            </section>
+            <section class="imagen5"></section>
+        </article>
+        <article class="articulo6" id="DMS">
+            <section class="imagen6"></section>
+            <section class="texto">
+                <h2>DMS (Document Management System)</h2>
+                <br><br>
+                <p>- Almacenamiento de documentos.</p>
+                <br>
+                <p>- Control de acceso y permisos.</p>
+                <br>
+                <p>- Facilita la búsqueda de documentos.</p>
+            </section>
+        </article>
+        <article class="articulo7" id="PMS">
+            <section class="texto"><h2>PMS (Project Management System)</h2>
+                <br><br>
+                <p>- Planifica tareas.</p>
+                <br>
+                <p>- Asignación de roles.</p>
+                <br>
+                <p>- Notifica cambios o retrasos.</p></section>
+            <section class="imagen7"></section>
+    </main>
+    <footer>
+        <section class="pie1">
+            <p><i class="fa-solid fa-user"></i> Alejandro Díaz</p>
+            <p><i class="fa-solid fa-phone"></i> +34 640 99 99 99</p>
+            <p><i class="fa-solid fa-envelope"></i> adiaari1810@ieszaidinvergeles.org</p>
+        </section>
+        <section class="pie2">
+            <i class="fa-brands fa-youtube" id="yt"></i>
+            <i class="fa-brands fa-instagram" id="ig"></i>
+            <i class="fa-brands fa-twitter" id="tw"></i>
+            <i class="fa-brands fa-telegram" id="tg"></i>
+            <i class="fa-brands fa-facebook" id="fb"></i>
+        </section>
+    </footer>
+
+    <script>
+        function mostrarMenu(){
+           let menu = document.querySelector(".Menu");
+           menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

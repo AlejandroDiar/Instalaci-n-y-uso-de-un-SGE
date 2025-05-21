@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odoo Gestión Empresarial</title>
+    <link rel="stylesheet" href="../css/Odoo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header id="Inicio">
+        <h1>Odoo Gestion Empresarial</h1>
+    </header>
+    <nav>
+        <div class="BotonMenu">
+            <p>MENU</p>
+            <button onclick="mostrarMenu()"></button>
+        </div>
+
+        <ul class="Menu">
+            <li><a href="index.html">Gestores Empresariales</a>
+            <li><a href="Tipos SGE.html">Tipos y Caracterísiticas</a></li>
+            <li><a href="Odoo.html">¿Qué es Odoo?</a></li></li>
+        </ul>
+    </nav>
+    <aside>
+        <ul>
+        <li>
+            <a href="#Inicio">Inicio</a>
+            <ul>
+                <li><a href="#aOdoo">¿Qué es Odoo?</a></li>
+                <li><a href="#aInstalacion">Proceso de Instalacion</a></li>
+                <li><a href="#aConfiguracion">Administración y Configuración</a></li>
+                <li><a href="#aRoles">Mecanismos de acceso seguro. Roles y Privilegios.</a></li>
+                <li><a href="#aExportacion">Exportación de la información.</a></li>
+            </ul>
+        </li>
+    </ul>
+    </aside>
+    <main>
+        <article id="aOdoo" class="articulo1">
+            <section class="texto1">
+                <h1>¿Qué es Odoo??</h1>
+                <br><br>
+                <p>- Odoo es un sistema gestor empresarial (SGE) de código abierto, es de tipo ERP e incluyen también CRM , permite sitios web, comercio electrónico, facturaciones, contabilidad, gestión de almacenes, proyectos, gestión del inventario entre muchas más opciones.</p>
+            </section>
+            <section class="imagen1"></section>
+        </article>
+        <article class="instalacion" id="aInstalacion">
+            <section class="instalacionTitulo">
+                <h1>PROCESO DE INSTALACIÓN</h1>
+                <br>
+                <p>- Para instalar Odoo lo haremos desde su página oficial, o haciendo clic <a target="_blank" href="https://www.odoo.com/es_ES/page/download">Aquí</a></p>
+            </section>
+            <section class="dos">
+                <section class="Tinst1"><p>Una vez en la página de odoo, deberemos rellenar información básica nuestra para poder instalar el instalador de Odoo.</p></section>
+                <br>
+                <section class="informacion"></section>
+                <br><br>
+                <section class="Tinst1"><p>Seleccionamos la versión y formato que nos venga mejor en este caso instalaremos Odoo 18 para windows. Y el instalador empezará a instalarse.</p></section>
+                <br>
+                <section class="version"></section>
+                <br><br>
+                <section class="Tinst1"><p>Ejecutamos el instalador haciendo clic en el, lo encontraéis donde lo hayas descargado, en mi caso en la carpeta de descargas. Nos pedirá elegir idioma, aceptamos todo y hacemos clic en "next" hasta llegar a la siguiente imagen.</p></section>
+                <br>
+                <section class="Tinst1"><p>Nos dará a elegir que componentes deseamos instalar, en mi caso lo dejo con la base de datos y servidor Odoo.</p></section>
+                <br><br>
+                <section class="componentes"></section>
+                <br><br>
+                <section class="Tinst1"><p>Introducimos información para el gestor de la base de datos, como nombre, puerto y contraseña. Y finalmente hacemos clic en install, este iniciará el proceso de instalación.</p></section>
+                <br>
+                <section class="contraseniaSQL"></section>
+                <br><br>
+                <section class="install"></section>
+                <br><br>
+                <section class="Tinst1"><p>Una vez instalado pasaremos a configurar la base de datos. Le asignaremos una contraseña maestra, nombre, correo electrónico, idiomas, etc.</p></section>
+                <br>
+                <section class="basedatos"></section>
+                <br><br>
+                <section class="Tinst1"><p>Iniciamos sesión la información introducida en la creación de la base de datos y tendremos acceso.</p></section>
+                <br>
+                <section class="iniciamosSesion"></section>
+                <br><br>
+                <section class="Tinst1"><p>Una vez dentro de Odoo, nos aparecerá una pantalla como esta, donde podremos elegir que herramientas usar, pero nosotro vamos a instalar odoo como aplicación, entonces haremos clic arriba derecha donde My company y clic en install app.</p></section>
+                <section class="aplicacion"></section>
+            </section>
+        </article>
+        <article class="Configuracion" id="aConfiguracion">
+            <section class="ConfiguracionTitulo">
+                <h1>ADMINISTRACIÓN Y CONFIGURACIÓN</h1>
+            </section>
+            <section class="tres">
+                <section class="Tinst1"><p>Para acceder a la configuración de Odoo, haremos clic en los cuadrados de la esquina superiro izquierda, y después clic en settings. Podemos ver muchas opciones, para añadir usuarios, añadir o cambiar idiomas, gestión de compañía, colores.</p></section>
+                <br>
+                <section class="conf1"></section>
+                <br><br>
+                <section class="Tinst1"><p>Podemos configurar unidades de medición, correos electrónicos, discusiones.</p></section>
+                <br>
+                <section class="conf2"></section>
+                <br><br>
+                <section class="Tinst1"><p>También el tema de permisos, reinicios de contraseñas, plugins, configuraciones de ubicación, autentificación, y al final tenemos las herramientas de desarrollador que nos servirán para modificar el tema de roles, permisos y más, a continuación las usaremos.</p></section>
+                <br>
+                <section class="conf3"></section>
+            </section>
+        </article>
+
+        <article class="PermisosRoles" id="aRoles">
+            <section class="PermisosRolesTitulo">
+                <h1>MECANISMOS DE ACCESO SEGURO. ROLES Y PRIVILEGIOS</h1>
+            </section>
+            <section class="cuatro">
+                <section class="Tinst1"><p>Para modificar el tema de roles y permisos usaremos grupos, estos grupos definirán permisos a los usuarios que pertenezcan a cada uno de los grupos. Para ello haremos clic arriba donde dice "Users and Companies", y groups, nos msotrará un listado con los grupos existentes. Nosotros crearemos uno haciendo clic en "New".</p></section>
+                <br><br>
+                <section class="roles1"></section>
+                <br><br>
+                <section class="Tinst1"><p>Al hacer clic en new empezaremos a crear un grupo, le asignamos nombre, tipo de grupo o para que se va a usar, tenemos una opción que es para que se comparta, duración de llave. Y lo que nos interesa es la parte de abajo, tenemos opciones users, menus, views, acces right, record rules, notes, etc. La de users que es la que está seleccionada nos permite añadir usuarios al grupo.</p></section>
+                <br><br>
+                <section class="roles2"></section>
+                <br><br>
+                <section class="Tinst1"><p>En la sección "Acces Rights" podemos modificar los permisos que el grupo asignará a sus usuarios, permisos que dan acceso a lectura, escritura, creación y eliminación.</p></section>
+                <br><br>
+                <section class="roles3"></section>
+            </section>
+        </article>
+
+        <article class="Exportacion" id="aExportacion">
+            <section class="ExportacionTitulo">
+                <h1>EXPORTACIÓN DE LA INFORMACIÓN</h1>
+            </section>
+            <section class="seis">
+                <section class="Tinst1"><p>Podemos exportar informacion de muchas cosas, ventas, inven tario, facturas, etc. Todas las secciones funcionan igual, lo explicaré con un ejemplo de inventario, accedemos a inventario, en mi caso recepciones.</p></section>
+                <br><br>
+                <section class="export1"></section>
+                <br><br>
+                <section class="Tinst1"><p>Podemos ver que tenemos una recepción de hoy, de parte de Manolico, hacemos clic en el cuadro de la izquierda dejandola seleccionada y en el engranaje de actiones hacemos clic en export.</p></section>
+                <br><br>
+                <section class="export2"></section>
+                <br><br>
+                <section class="Tinst1"><p>Se nos abrirá un panel donde podremos elegir el tipo de formato en el que se exportará, campos disponibles, etc. Al hacer clic en Export automáticamente se nos isntalará en el formato esspecificado.</p></section>
+                <br><br>
+                <section class="export3"></section>
+            </section>
+        </article>
+    </main>    
+    <footer>
+        <section class="pie1">
+            <p><i class="fa-solid fa-user"></i> Alejandro Díaz</p>
+            <p><i class="fa-solid fa-phone"></i> +34 640 99 99 99</p>
+            <p><i class="fa-solid fa-envelope"></i> adiaari1810@ieszaidinvergeles.org</p>
+        </section>
+        <section class="pie2">
+            <i class="fa-brands fa-youtube" id="yt"></i>
+            <i class="fa-brands fa-instagram" id="ig"></i>
+            <i class="fa-brands fa-twitter" id="tw"></i>
+            <i class="fa-brands fa-telegram" id="tg"></i>
+            <i class="fa-brands fa-facebook" id="fb"></i>
+        </section>
+    </footer>
+
+    <script>
+        function mostrarMenu(){
+           let menu = document.querySelector(".Menu");
+           menu.classList.toggle("show");
+        }
+    </script>
+            
+
+</body>
+</html>
