@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistemas Gestores Empresariales</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>SISTEMAS DE GESTION EMPRESARIAL</h1>
+    </header>
+    <nav>
+        <div class="BotonMenu">
+            <p>MENU</p>
+            <button onclick="mostrarMenu()"></button>
+        </div>
+        <ul class="Menu">
+            <li><a href="index.html">Gestores Empresariales</a></li>
+            <li><a href="Tipos SGE.html">Tipos y Caracterísiticas</a></li>
+            <li><a href="Odoo.html">¿Qué es Odoo?</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <ul>
+            <li><a href="#Explicacion">¿Qué es un SGE?</a></li>
+            <li><a href="#Ventajas">Ventajas de usar un SGE</a></li>
+        </ul>
+    </aside>
+    <main>
+        <article class="articulo1" id="Explicacion">
+            <section class="texto1">
+                <h2>¿Qué es un SGE?</h2>
+                <br>
+                <p>Un sistema de gestión empresarial es una herramienta que permite controlar, planificar, organizar y automatizar las tareas de una empresa. Su objetivo es unificar en un único software todas las operaciones de la compañía con el fin de facilitar la toma de decisiones y el análisis de los datos.</p>
+            </section>
+            <section class="imagen1"></section>
+        </article>
+        <article class="articulo2" id="Ventajas">
+            <section class="imagen2"></section>
+            <section class="texto2">
+                <h2>Ventajas de usar un SGE</h2>
+                <br>
+                <p>1. Mejora la eficiencian al integrar diferentes herramientas para gestionar la empresa, permitiendo una mejor coordinación y comunicación.</p>
+                <p>2. Proporcionan información en tiempo real sobre el rendimiento de la empresa, lo que permite tomar decisiones con mayor facilidad.</p>
+                <p>3. Reducción de costos al optimizar procesos.</p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <section class="pie1">
+            <p><i class="fa-solid fa-user"></i> Alejandro Díaz</p>
+            <p><i class="fa-solid fa-phone"></i> +34 640 99 99 99</p>
+            <p><i class="fa-solid fa-envelope"></i> adiaari1810@ieszaidinvergeles.org</p>
+        </section>
+        <section class="pie2">
+            <i class="fa-brands fa-youtube" id="yt"></i>
+            <i class="fa-brands fa-instagram" id="ig"></i>
+            <i class="fa-brands fa-twitter" id="tw"></i>
+            <i class="fa-brands fa-telegram" id="tg"></i>
+            <i class="fa-brands fa-facebook" id="fb"></i>
+        </section>
+    </footer>
+
+    <script>
+        function mostrarMenu(){
+           let menu = document.querySelector(".Menu");
+           menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
